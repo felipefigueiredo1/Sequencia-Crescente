@@ -17,13 +17,13 @@ class SequenciaCrescente
             {
                 if ($achouUm)
                 {
-                    return implode(",", $array) . ' Falso ';
+                    return implode(",", $array) . ' false ';
                 }
                 $achouUm = true;
 
                 if ($k > 1 && $array[$i] >= $array[$k])
                 {
-                    $deletarAtual = [true, $array, 'Verdadeiro'];
+                    $deletarAtual = [true, $array, ' true '];
                 }
             }
 
@@ -37,7 +37,7 @@ class SequenciaCrescente
                 $j = $k;
             }
         }
-        return implode(",", $array) . ' Verdadeiro ';
+        return implode(",", $array) . ' true ';
     }
 }
 
@@ -47,4 +47,4 @@ class SequenciaCrescente
  */
 
 $obj = new SequenciaCrescente;
-print_r($obj->sequencia([10, 1, 2, 3, 4, 5, 6, 1]));
+print_r($obj->sequencia([10, 1, 2,]));
